@@ -11,7 +11,7 @@ html, body{
 }
 
 main{
-    width: 50%;
+    width: 30%;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -85,6 +85,16 @@ button:focus, button:active{
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: #ffdfcd;
+}
+
+input:invalid{
+    border: 3px solid rgba(239, 68, 68, 1);
+}
+
+@media (max-width: 1800px) {
+    main{
+        width: 40%;
+    }
 }
 
 @media (max-width: 1200px) {
