@@ -1,3 +1,129 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+}
+
+main{
+    width: 50%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #6727aa;
+}
+
+section{
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+section div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+label{
+    margin-right: 1rem;
+}
+input{
+    padding: .5rem;
+    width: 8rem;
+    border-radius: .25rem;
+    background-color: #ececec;
+    text-align: right;
+}
+
+button{
+    font-weight: 600;
+    padding: .825rem 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #6727aa;
+    transition: all 0.25s ease-in-out;
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    background-color: hsl(269, 63%, 51%);
+}
+
+button:focus, button:active{
+    border: none;
+    outline: none;
+}
+
+.alert-green{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #d1e7dd;
+}
+.alert-yellow{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff3cd;
+}
+.alert-orange{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #ffdfcd;
+}
+
+@media (max-width: 1200px) {
+    main{
+        width: 75%;
+    }
+}
+
+@media (max-width: 724px) {
+    main{
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    section div{
+        flex-direction: column;
+    }
+    label{
+        margin-right: 0;
+    }
+    input{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    section{
+        padding: 1.5rem 2.5rem;
+    }
+}
+
+@media (max-width: 468px){
+    h1{
+        font-size: 1.75rem;
+    }
+    main{
+        width: 100%;
+        padding: 1rem;
+    }
+    section{
+        padding: 2rem 1rem;
+    }
+}
