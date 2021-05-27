@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useState } from "react"
+import { Helmet } from "react-helmet"
 import "../styles/index.css"
 
 const IndexPage = () => {
@@ -16,7 +17,11 @@ const IndexPage = () => {
     console.log(resultString > 75)
   }
   
-  return (
+  return (<>
+  <Helmet>
+    <meta charSet="utf-8" />
+    <title>Calculadora de Acertos</title>
+  </Helmet>
   <main className="mx-auto my-2">
     <h1>Calculadora de Acertos</h1>
     <section className="mt-4 shadow-md">
@@ -52,6 +57,7 @@ const IndexPage = () => {
       
     </section>
   </main>
+  </>
 )}
 
 export default IndexPage
