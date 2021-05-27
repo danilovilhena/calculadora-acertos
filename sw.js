@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-b33089f4c92985e3078d.js"
+    "url": "webpack-runtime-ae42088ef8b81ff420c9.js"
   },
   {
     "url": "framework-c96300279e079ab009d0.js"
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "styles.ff80d201da0042ed6f9a.css"
   },
   {
-    "url": "app-946dbe88820eaeec9dd7.js"
+    "url": "app-4278ac2920efbbdd3e51.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "335ef4fffc2689b33fcc52b85d5857a5"
+    "revision": "2786ba4dafbcf28c3672a5b98ff65016"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-504f688893251871c6ae.js"
@@ -51,7 +51,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "9716e05e183e7905e7f014b87f835cc7"
+    "revision": "614fa0db8907f6a4a0f34e8ad778c1c3"
   },
   {
     "url": "polyfill-72b219bae196683411be.js"
@@ -150,7 +150,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/calculadora-acertos/app-946dbe88820eaeec9dd7.js`))) {
+  if (!resources || !(await caches.match(`/calculadora-acertos/app-4278ac2920efbbdd3e51.js`))) {
     return await fetch(event.request)
   }
 
